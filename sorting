@@ -1,0 +1,16 @@
+#sorting
+arr = [5,4,7,3,8]
+arr.sort()
+print(arr)
+
+arr.sort(reverse=True)
+print(arr)
+
+#sorting strings
+arr = ["bob", "alice", "jane", "doe"]
+arr.sort()
+print(arr)
+
+#sort by length of strings
+arr.sort(key=len)
+print(arr) 
