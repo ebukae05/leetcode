@@ -1,7 +1,10 @@
-target = 9
-nums = [2,7,11,15]
+class Solution:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+        prevMap = {} # val : index
 
-myMap = {}
-
-for i, n in enumerate(nums):
-    diff = target - n
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in prevMap:
+                return [prevMap[diff], i]
+            prevMap[n] = i
+        return
